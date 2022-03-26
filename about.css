@@ -1,0 +1,39 @@
+/* code for header */
+header {
+  background-color: white;
+  display: block;
+}
+#f1logo {
+  float: left;
+}
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* code for text formatting */
+h1 {
+  text-align: center;
+  background-image: url(projectimages/chequered\ flag.png);
+  color: red;
+  font-weight: bold;
+}
+h3 {
+  font-size: 30px;
+}
+.teampages {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: solid;
+}
+/* code for layout table */

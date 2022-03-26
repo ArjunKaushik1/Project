@@ -1,0 +1,45 @@
+table {
+  margin: auto;
+}
+#intro {
+  width: 70%;
+}
+header {
+  background-color: white;
+  display: block;
+}
+#f1logo {
+  float: left;
+}
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h2 {
+  text-align: center;
+}
+#stats {
+  text-align: right;
+}
+#driversprof {
+    text-align: center;
+}
+#drivers {
+  text-align: center;
+  column-width: 50%;
+}
+.bio {
+    text-align: center;
+    width: 50%;
+}
+
