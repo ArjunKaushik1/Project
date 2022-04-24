@@ -19,8 +19,28 @@ li {
 }
 a {
   text-decoration: none;
+}
+#merc:hover {
+  background-color: black;
+  color: silver;
+}
+#redb:hover {
+  background-color: blue;
+  color: red;
+}
+#ferr:hover {
+  background-color: red;
   color: black;
 }
+#mcla:hover {
+  background-color: orange;
+  color: black;
+}
+#alph:hover {
+  background-color: grey;
+  color: darkblue;
+}
+
 /* code for text formatting */
 h1 {
   text-align: center;
@@ -37,3 +57,5 @@ h3 {
   text-decoration: solid;
 }
 /* code for layout table */
+
+/* code for header background */

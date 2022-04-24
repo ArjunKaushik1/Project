@@ -19,11 +19,31 @@ table {
     float: left;
     display: block;
     text-align: center;
+    padding-left: 10px;
     padding-right: 10px;
   }
   a {
     text-decoration: none;
+  }
+  #merc:hover {
+    background-color: black;
+    color: silver;
+  }
+  #redb:hover {
+    background-color: blue;
+    color: red;
+  }
+  #ferr:hover {
+    background-color: red;
     color: black;
+  }
+  #mcla:hover {
+    background-color: orange;
+    color: black;
+  }
+  #alph:hover {
+    background-color: grey;
+    color: darkblue;
   }
   h2 {
     text-align: center;
