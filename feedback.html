@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="projectimages/favicon.ico"/>
-  
+    <link rel="icon" type="image/x-icon" href="projectimages/favicon.ico" />
+
     <title>Team Support Form</title>
     <style>
       #form {
@@ -16,9 +16,73 @@
       h2 {
         text-align: center;
       }
+      header {
+        background-color: white;
+        display: block;
+      }
+      #f1logo {
+        float: left;
+      }
+      ul {
+        list-style: none;
+        overflow: hidden;
+      }
+      li {
+        float: left;
+        display: block;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+      #merc:hover {
+        background-color: black;
+        color: silver;
+      }
+      #redb:hover {
+        background-color: blue;
+        color: red;
+      }
+      #ferr:hover {
+        background-color: red;
+        color: black;
+      }
+      #mcla:hover {
+        background-color: orange;
+        color: black;
+      }
+      #alpha:hover {
+        background-color: grey;
+        color: darkblue;
+      }
     </style>
   </head>
   <body>
+    <div class="header">
+      <div>
+        <a href="about.html">
+          <img
+            src="projectimages/formula1logo.png"
+            alt="logo"
+            width="60"
+            id="f1logo"
+        /></a>
+      </div>
+      <div id="websitelinks">
+        <h3></h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mercedes.html" id="merc">Mercedes AMG</a></li>
+          <li><a href="redbull.html" id="redb">Redbull Racing</a></li>
+          <li><a href="ferrari.html" id="ferr">Ferrari</a></li>
+          <li><a href="mclaren.html" id="mcla">Mclaren F1</a></li>
+          <li><a href="alphatauri.html" id="aplha">Alphatauri</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
     <h2>Team Support Form</h2>
     <div id="form">
       <form action="https://oim-apis.herokuapp.com/form2" method="post">

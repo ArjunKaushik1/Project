@@ -1,0 +1,65 @@
+table {
+  margin: auto;
+}
+#intro {
+  width: 70%;
+}
+header {
+  background-color: white;
+  display: block;
+}
+#f1logo {
+  float: left;
+}
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#merc:hover {
+  background-color: black;
+  color: silver;
+}
+#redb:hover {
+  background-color: blue;
+  color: red;
+}
+#ferr:hover {
+  background-color: red;
+  color: black;
+}
+#mcla:hover {
+  background-color: orange;
+  color: black;
+}
+#alph:hover {
+  background-color: grey;
+  color: darkblue;
+}
+h2 {
+  text-align: center;
+}
+#stats {
+  text-align: right;
+}
+#driversprof {
+  text-align: center;
+}
+#drivers {
+  text-align: center;
+  column-width: 50%;
+}
+.bio {
+  text-align: center;
+  width: 50%;
+}
