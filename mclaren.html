@@ -163,10 +163,11 @@
               src="projectimages/daniel.jpg"
               alt="Daniel Ricciardo"
               width="300"
+              id="dani"
             />
           </td>
           <td>
-            <img src="projectimages/lando.jpg" alt="Lando Norris" width="300" />
+            <img src="projectimages/lando.jpg" alt="Lando Norris" width="300" id="lando" />
           </td>
         </tr>
         <tr>
@@ -232,5 +233,41 @@
         </li>
       </ul>
     </div>
+    <script>
+        function enlargeM() {
+          console.log("start");
+          const img = document.getElementById("dani");
+          img.style.width = "350px";
+        }
+        document.getElementById("dani").onmouseover = function () {
+          enlargeM();
+        };
+  
+        function smallM() {
+          console.log("start");
+          const img = document.getElementById("dani");
+          img.style.width = "200px";
+        }
+        document.getElementById("dani").onmouseout = function () {
+          smallM();
+        };
+        function enlargeS() {
+          console.log("start");
+          const img = document.getElementById("lando");
+          img.style.width = "350px";
+        }
+        document.getElementById("lando").onmouseover = function () {
+          enlargeS();
+        };
+  
+        function smallS() {
+          console.log("start");
+          const img = document.getElementById("lando");
+          img.style.width = "200px";
+        }
+        document.getElementById("lando").onmouseout = function () {
+          smallS();
+        };
+      </script>
   </body>
 </html>

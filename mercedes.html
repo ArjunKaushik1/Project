@@ -142,13 +142,15 @@
               src="projectimages/lewis.jpeg"
               alt="Lewis Hamilton"
               width="200"
+              id="lewis"
             />
           </td>
           <td>
             <img
               src="projectimages/george.jpg"
               alt="George Russel"
-              width="300"
+              width="400"
+              id="george"
             />
           </td>
         </tr>
@@ -218,5 +220,41 @@
         </li>
       </ul>
     </div>
+    <script>
+      function enlargeM() {
+        console.log("start");
+        const img = document.getElementById("lewis");
+        img.style.width = "350px";
+      }
+      document.getElementById("lewis").onmouseover = function () {
+        enlargeM();
+      };
+
+      function smallM() {
+        console.log("start");
+        const img = document.getElementById("lewis");
+        img.style.width = "200px";
+      }
+      document.getElementById("lewis").onmouseout = function () {
+        smallM();
+      };
+      function enlargeS() {
+        console.log("start");
+        const img = document.getElementById("george");
+        img.style.width = "450px";
+      }
+      document.getElementById("george").onmouseover = function () {
+        enlargeS();
+      };
+
+      function smallS() {
+        console.log("start");
+        const img = document.getElementById("george");
+        img.style.width = "300px";
+      }
+      document.getElementById("george").onmouseout = function () {
+        smallS();
+      };
+    </script>
   </body>
 </html>

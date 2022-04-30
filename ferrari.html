@@ -137,15 +137,17 @@
           <td>
             <img
               src="projectimages/charles.jpg"
-              alt="Max Verstappen"
+              alt="Charles Leclerc"
               width="300"
+              id="charles"
             />
           </td>
           <td>
             <img
               src="projectimages/carlos.jpg"
-              alt="Sergio Perez"
+              alt="Carlos Sainz"
               width="300"
+              id="carlos"
             />
           </td>
         </tr>
@@ -212,5 +214,41 @@
         </li>
       </ul>
     </div>
+    <script>
+      function enlargeM() {
+        console.log("start");
+        const img = document.getElementById("charles");
+        img.style.width = "350px";
+      }
+      document.getElementById("charles").onmouseover = function () {
+        enlargeM();
+      };
+
+      function smallM() {
+        console.log("start");
+        const img = document.getElementById("charles");
+        img.style.width = "200px";
+      }
+      document.getElementById("charles").onmouseout = function () {
+        smallM();
+      };
+      function enlargeS() {
+        console.log("start");
+        const img = document.getElementById("carlos");
+        img.style.width = "350px";
+      }
+      document.getElementById("carlos").onmouseover = function () {
+        enlargeS();
+      };
+
+      function smallS() {
+        console.log("start");
+        const img = document.getElementById("carlos");
+        img.style.width = "200px";
+      }
+      document.getElementById("carlos").onmouseout = function () {
+        smallS();
+      };
+    </script>
   </body>
 </html>

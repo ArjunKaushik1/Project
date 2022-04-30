@@ -122,13 +122,19 @@
         </tr>
         <tr>
           <td>
-            <img src="projectimages/max.jpg" alt="Max Verstappen" width="200" />
+            <img
+              src="projectimages/max.jpg"
+              alt="Max Verstappen"
+              width="200"
+              id="max"
+            />
           </td>
           <td>
             <img
               src="projectimages/sergio.jpg"
               alt="Sergio Perez"
               width="300"
+              id="sergio"
             />
           </td>
         </tr>
@@ -199,5 +205,41 @@
         </li>
       </ul>
     </div>
+    <script>
+      function enlargeM() {
+        console.log("start");
+        const img = document.getElementById("max");
+        img.style.width = "350px";
+      }
+      document.getElementById("max").onmouseover = function () {
+        enlargeM();
+      };
+
+      function smallM() {
+        console.log("start");
+        const img = document.getElementById("max");
+        img.style.width = "200px";
+      }
+      document.getElementById("max").onmouseout = function () {
+        smallM();
+      };
+      function enlargeS() {
+        console.log("start");
+        const img = document.getElementById("sergio");
+        img.style.width = "350px";
+      }
+      document.getElementById("sergio").onmouseover = function () {
+        enlargeS();
+      };
+
+      function smallS() {
+        console.log("start");
+        const img = document.getElementById("sergio");
+        img.style.width = "200px";
+      }
+      document.getElementById("sergio").onmouseout = function () {
+        smallS();
+      };
+    </script>
   </body>
 </html>

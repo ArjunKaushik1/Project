@@ -84,7 +84,7 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td id="history">
           <h3>Hisotry of Formula 1</h3>
           <p>
             The Formula One series originated with the European Championship of
@@ -118,7 +118,7 @@
         </td>
       </tr>
     </table>
-    <!-- this information was taken from an outside source -->
+    <!-- information was taken from an outside source -->
     <br />
     <h3>Participating Teams</h3>
     <div>
@@ -194,15 +194,16 @@
       alt="drivers"
       width="500"
     />
-    <!-- <script>
-      function mercedes() {
+    <script>
+      function background() {
         console.log("start");
-        document.getElementById("merc").style.backgroundColor = "black";
-        document.getElementById("merc").style.color = "silver";
+        const bg = document.getElementById("history");
+        bg.style.backgroundColor = "black";
+        bg.style.color = "white";
       }
-      document.getElementById = function () {
-        mercedes();
+      document.getElementById("history").onmouseover = function () {
+        background();
       };
-    </script> -->
+    </script>
   </body>
 </html>

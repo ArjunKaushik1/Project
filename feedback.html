@@ -123,10 +123,25 @@
         </div>
         <br />
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit" id="btn">Submit</button>
           <button type="reset" value="Clear">Reset</button>
         </div>
       </form>
     </div>
+    <script>
+      function check() {
+        console.log("start");
+        const x = document.getElementById("name").value;
+        const y = document.getElementById("email").value;
+        if (x === 0) {
+          alert("enter email");
+        } else if (y === 0) {
+          alert("enter email");
+        }
+      }
+      document.getElementById("btn").onclick = function () {
+        check();
+      };
+    </script>
   </body>
 </html>

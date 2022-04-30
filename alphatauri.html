@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="projectimages/favicon.ico" />
     <link rel="stylesheet" href="alphatauri.css" />
     <title>AlphaTauri</title>
   </head>
@@ -122,12 +123,13 @@
           <td>
             <img
               src="projectimages/pierre.jpg"
-              alt="Max Verstappen"
+              alt="Pierre Gasly"
               width="300"
+              id="pierre"
             />
           </td>
           <td>
-            <img src="projectimages/yuki.jpg" alt="Sergio Perez" width="300" />
+            <img src="projectimages/yuki.jpg" alt="Yuki Tsunoda" width="300" id="yuki" />
           </td>
         </tr>
         <tr>
@@ -192,5 +194,41 @@
         </li>
       </ul>
     </div>
+    <script>
+        function enlargeM() {
+          console.log("start");
+          const img = document.getElementById("pierre");
+          img.style.width = "350px";
+        }
+        document.getElementById("pierre").onmouseover = function () {
+          enlargeM();
+        };
+  
+        function smallM() {
+          console.log("start");
+          const img = document.getElementById("pierre");
+          img.style.width = "200px";
+        }
+        document.getElementById("pierre").onmouseout = function () {
+          smallM();
+        };
+        function enlargeS() {
+          console.log("start");
+          const img = document.getElementById("yuki");
+          img.style.width = "350px";
+        }
+        document.getElementById("yuki").onmouseover = function () {
+          enlargeS();
+        };
+  
+        function smallS() {
+          console.log("start");
+          const img = document.getElementById("yuki");
+          img.style.width = "200px";
+        }
+        document.getElementById("yuki").onmouseout = function () {
+          smallS();
+        };
+      </script>
   </body>
 </html>
